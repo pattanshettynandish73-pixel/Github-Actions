@@ -1,0 +1,27 @@
+name: CI
+
+
+on:
+
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]  
+
+  workflow_dispatch:
+
+
+jobs:
+  build-and-release:
+
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo hello wasup bitches!
+
+      - name: run a multi line script
+        run: |
+            echo Add other actions to build,
+            echo test, and deploy the applicatio
+  
