@@ -12,7 +12,7 @@ on:
           required: true
 
 
-  job:
+  jobs:
     greet:
 
       runs-on: ubuntu:latest
@@ -20,5 +20,5 @@ on:
       steps:
 
         - name: Send greeting
-          run: echo "Hello ${{ githib.event.input.name }}"
+          run: echo "Hello ${{ github.event.input.name }}"
         
