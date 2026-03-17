@@ -8,13 +8,13 @@ on:
   pull_request:
     branches: [ main ]  
 
-  workflow_dispatch:
+
 
 
 jobs:
   build-and-release:
 
-    runs-on: ubuntu-22.04
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
