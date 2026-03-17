@@ -4,15 +4,15 @@ name: Manul update from github
 on: 
 
   workflow_dispatch:
-      inputs:
-        name:
+    inputs:
+      name:
 
-          description: Person to greet
-          default: world
-          required: true
+        description: Person to greet
+        default: world
+        required: true
 
 
-  jobs:
+jobs:
     greet:
 
       runs-on: ubuntu:latest
